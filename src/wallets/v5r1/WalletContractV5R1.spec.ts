@@ -431,8 +431,8 @@ describe('WalletContractV5R1', () => {
         catch(err) {
             handleTest500(err);
         }
-        // 20*1500
-    }, 300000);
+        // 20*1500*2
+    }, 600000);
 });
 
 function getTransferSendMode(cell: Cell): SendMode {

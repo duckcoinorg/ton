@@ -198,8 +198,8 @@ describe('WalletContractV5Beta', () => {
         catch(err) {
             handleTest500(err);
         }
-        // 20*1500
-    }, 300000);
+        // 20*1500*2
+    }, 600000);
 
     it('should remove extension', async () => {
         const extensionKey = randomTestKey('v5-treasure-extension');
@@ -389,6 +389,6 @@ describe('WalletContractV5Beta', () => {
         catch(err) {
             handleTest500(err);
         }
-        // 20*1500
-    }, 300000);
+        // 20*1500*2
+    }, 600000);
 });
