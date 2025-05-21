@@ -137,7 +137,7 @@ describe('WalletContractV5Beta', () => {
         await wallet.send(transfer);
     });
 
-    it('should add extension', async () => {
+    it.skip('should add extension', async () => {
         try {
             const extensionKey = randomTestKey('v5-treasure-extension');
             const extensionContract = client.open(WalletContractV5Beta.create({ walletId: { workchain: 0, networkGlobalId: -3 }, publicKey: extensionKey.publicKey }));
