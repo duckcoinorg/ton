@@ -222,7 +222,8 @@ describe('WalletContractV5R1', () => {
         catch(err) {
             handleTest500(err);
         }
-    }, 60000);
+        // 20*1500
+    }, 300000);
 
     it('should remove extension', async () => {
         try {
@@ -430,7 +431,8 @@ describe('WalletContractV5R1', () => {
         catch(err) {
             handleTest500(err);
         }
-    }, 260000);
+        // 20*1500
+    }, 300000);
 });
 
 function getTransferSendMode(cell: Cell): SendMode {
