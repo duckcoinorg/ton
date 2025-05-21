@@ -12,3 +12,6 @@
 !.yarn/versions
 
 .env
+
+docs
+.external-ecmascript.js
