@@ -1,7 +1,8 @@
 on:
   push:
     branches:
-      - main
+      - duck
+
 name: Build, Test and Publish
 jobs:
   publish:
