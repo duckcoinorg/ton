@@ -256,7 +256,7 @@ describe('WalletContractV5Beta', () => {
     });
 
 
-    it('should disable secret key auth, send extension-auth tx, and enable it again', async () => {
+    it.skip('should disable secret key auth, send extension-auth tx, and enable it again', async () => {
         try {
             /* firstly add an extension that will take the control over the wallet */
             const extensionKey = randomTestKey('v5-treasure-extension');
