@@ -22,6 +22,7 @@ yarn add @duckcoin/ton @ton/crypto @ton/core buffer
 ## Test
 
 If you experience issues with tests failing with 500 errors - consider using different API or if it's not feasible - you can replace those with warnings by calling `yarn test` with `IGNORE_500=true` as an environment variable
+Same with adding extension to the wallet, variable `IGNORE_EXTENSION_ERR=true`
 
 ### Disclaimer 🐛🐞
 

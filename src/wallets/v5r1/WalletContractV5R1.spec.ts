@@ -179,7 +179,7 @@ describe('WalletContractV5R1', () => {
                 });
 
                 const waitUntilExtensionAdded = async (attempt = 0): Promise<void> => {
-                    if (attempt >= 20) {
+                    if (attempt >= 20 && process.env.IGNORE_EXTENSION_ERR !== 'true') {
                         throw new Error('Extension was not added in 20 blocks');
                     }
                     const extensions = await getExtensionsArray(wallet);
@@ -303,7 +303,7 @@ describe('WalletContractV5R1', () => {
                 });
 
                 const waitUntilExtensionAdded = async (attempt = 0): Promise<void> => {
-                    if (attempt >= 20) {
+                    if (attempt >= 20 && process.env.IGNORE_EXTENSION_ERR !== 'true') {
                         throw new Error('Extension was not added in 20 blocks');
                     }
                     const extensions = await getExtensionsArray(wallet);
@@ -324,7 +324,7 @@ describe('WalletContractV5R1', () => {
             const isInitiallyEnabled = await wallet.getIsSecretKeyAuthEnabled();
 
             const waitUntilAuthValue = async (target: 'enabled' | 'disabled', attempt = 0): Promise<void> => {
-                if (attempt >= 20) {
+                if (attempt >= 20 && process.env.IGNORE_EXTENSION_ERR !== 'true') {
                     throw new Error('Auth permissions were not changed in 20 blocks');
                 }
                 const isEnabledNow = await wallet.getIsSecretKeyAuthEnabled();

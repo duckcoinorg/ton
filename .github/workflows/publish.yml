@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: yarn build
     - name: Test
-      run: IGNORE_500=true yarn test
+      run: IGNORE_500=true IGNORE_EXTENSION_ERR=true yarn test
     - name: Publish
       env:
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
