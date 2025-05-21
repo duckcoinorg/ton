@@ -413,6 +413,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@duckcoin/ton@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@duckcoin/ton@workspace:."
+  dependencies:
+    "@release-it/keep-a-changelog": ^5.0.0
+    "@ton/core": ^0.60.0
+    "@ton/crypto": 3.2.0
+    "@ton/emulator": ^2.1.1
+    "@types/jest": ^27.0.1
+    "@types/node": ^16.7.10
+    axios: ^1.9.0
+    buffer: ^6.0.3
+    dataloader: ^2.0.0
+    dotenv: ^16.5.0
+    expect: ^27.1.0
+    jest: ^27.1.0
+    jest-mock: ^27.1.0
+    karma: ^6.3.4
+    karma-chrome-launcher: ^3.1.0
+    karma-jasmine: ^4.0.1
+    karma-typescript: ^5.5.2
+    karma-webpack: ^5.0.0
+    prando: ^6.0.1
+    release-it: ^17.1.1
+    ts-jest: ^27.0.5
+    ts-loader: ^9.2.5
+    ts-node: ^10.7.0
+    typedoc: ^0.23.24
+    typescript: ^5.6.3
+    webpack: ^5.51.2
+    zod: ^3.21.4
+  peerDependencies:
+    "@ton/core": ">=0.60.0"
+    "@ton/crypto": ">=3.2.0"
+  languageName: unknown
+  linkType: soft
+
 "@iarna/toml@npm:2.2.5":
   version: 2.2.5
   resolution: "@iarna/toml@npm:2.2.5"
@@ -1038,45 +1075,6 @@ __metadata:
   checksum: cf774bf3b06f36d72d57c18adf29c36a6a1bf6b27784fb77dbc36d43db88eabf708b498c24c5fe3702035447b4b1183b7a6da3f8df7b7af84c46c2ab8eaf821b
   languageName: node
   linkType: hard
-
-"@ton/ton@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@ton/ton@workspace:."
-  dependencies:
-    "@release-it/keep-a-changelog": ^5.0.0
-    "@ton/core": ^0.60.0
-    "@ton/crypto": 3.2.0
-    "@ton/emulator": ^2.1.1
-    "@types/jest": ^27.0.1
-    "@types/node": ^16.7.10
-    axios: ^1.6.7
-    buffer: ^6.0.3
-    dataloader: ^2.0.0
-    dotenv: ^16.5.0
-    expect: ^27.1.0
-    jest: ^27.1.0
-    jest-mock: ^27.1.0
-    karma: ^6.3.4
-    karma-chrome-launcher: ^3.1.0
-    karma-jasmine: ^4.0.1
-    karma-typescript: ^5.5.2
-    karma-webpack: ^5.0.0
-    prando: ^6.0.1
-    release-it: ^17.1.1
-    symbol.inspect: 1.0.1
-    teslabot: ^1.3.0
-    ts-jest: ^27.0.5
-    ts-loader: ^9.2.5
-    ts-node: ^10.7.0
-    typedoc: ^0.23.24
-    typescript: ^5.6.3
-    webpack: ^5.51.2
-    zod: ^3.21.4
-  peerDependencies:
-    "@ton/core": ">=0.60.0"
-    "@ton/crypto": ">=3.2.0"
-  languageName: unknown
-  linkType: soft
 
 "@tootallnate/once@npm:1":
   version: 1.1.2
@@ -1806,14 +1804,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.7":
-  version: 1.6.7
-  resolution: "axios@npm:1.6.7"
+"axios@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "axios@npm:1.9.0"
   dependencies:
-    follow-redirects: ^1.15.4
+    follow-redirects: ^1.15.6
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 87d4d429927d09942771f3b3a6c13580c183e31d7be0ee12f09be6d5655304996bb033d85e54be81606f4e89684df43be7bf52d14becb73a12727bf33298a082
+  checksum: 631f02c9c279f2ae90637a4989cc9d75c1c27aefd16b6e8eb90f98a4d0bddaccfd1cb1387be12101d1ab0f9bbf0c47e2451b4de0cf2870462a7d9ed3de8da3f2
   languageName: node
   linkType: hard
 
@@ -3640,13 +3638,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.4":
+"follow-redirects@npm:^1.0.0":
   version: 1.15.5
   resolution: "follow-redirects@npm:1.15.5"
   peerDependenciesMeta:
     debug:
       optional: true
   checksum: 5ca49b5ce6f44338cbfc3546823357e7a70813cecc9b7b768158a1d32c1e62e7407c944402a918ea8c38ae2e78266312d617dc68783fac502cbb55e1047b34ec
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.9
+  resolution: "follow-redirects@npm:1.15.9"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 859e2bacc7a54506f2bf9aacb10d165df78c8c1b0ceb8023f966621b233717dab56e8d08baadc3ad3b9db58af290413d585c999694b7c146aaf2616340c3d2a6
   languageName: node
   linkType: hard
 
@@ -8047,7 +8055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"teslabot@npm:^1.3.0, teslabot@npm:^1.5.0":
+"teslabot@npm:^1.5.0":
   version: 1.5.0
   resolution: "teslabot@npm:1.5.0"
   checksum: 1494f83b9070f3d0882c7ce089a69ea46f0f30ee24c14036880ed5f49882cd80ff47f1c5543c9c973d250596896640130c16b221e84be296474a02f65e7187d0

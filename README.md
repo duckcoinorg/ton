@@ -1,6 +1,6 @@
 # TON JS Client
 
-[![Version npm](https://img.shields.io/npm/v/ton.svg?logo=npm)](https://www.npmjs.com/package/ton)
+[![Version npm](https://img.shields.io/npm/v/@duckcoin/ton.svg?logo=npm)](https://www.npmjs.com/package/@duckcoin/ton)
 
 Cross-platform client for TON blockchain.
 
@@ -10,11 +10,22 @@ Cross-platform client for TON blockchain.
 - 🍰 Get balance
 - ✈️ Transfers
 
+### Planned
+- 🌎 DNS (including custom)
+
 ## Install
 
 ```bash
-yarn add @ton/ton @ton/crypto @ton/core buffer
+yarn add @duckcoin/ton @ton/crypto @ton/core buffer
 ```
+
+## Test
+
+If you experience issues with tests failing with 500 errors - consider using different API or if it's not feasible - you can replace those with warnings by calling `yarn test` with `IGNORE_500=true` as an environment variable
+
+### Disclaimer 🐛🐞
+
+That's a temporary solution. We plan to resolve those with splitting suites into `unit` and `e2e` correspondingly and negotiating with API providers in order to find out and solve the root cause
 
 #### Browser polyfill
 
@@ -30,8 +41,8 @@ To use this library you need HTTP API endpoint, you can use one of the public en
 - Mainnet: https://toncenter.com/api/v2/jsonRPC
 - Testnet: https://testnet.toncenter.com/api/v2/jsonRPC
 
-```js
-import { TonClient, WalletContractV4, internal } from "@ton/ton";
+```ts
+import { TonClient, WalletContractV4, internal } from "@duckcoin/ton";
 import { mnemonicNew, mnemonicToPrivateKey } from "@ton/crypto";
 
 // Create Client
@@ -58,7 +69,7 @@ let transfer = await contract.createTransfer({
   secretKey: keyPair.secretKey,
   messages: [internal({
     value: '1.5',
-    to: 'EQCD39VS5jcptHL8vMjEXrzGaRcCVYto7HUn4bpAOg8xqB2N',
+    to: 'EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c',
     body: 'Hello world',
   })]
 });
@@ -67,11 +78,13 @@ let transfer = await contract.createTransfer({
 
 ## Docs
 
-[Documentation](https://ton-community.github.io/ton/)
+[Documentation](https://duckcoinorg.github.io/ton/)
 
 ## Acknowledgements
 
-This library is developed by the [Whales Corp.](https://tonwhales.com/) and maintained by [Dan Volkov](https://github.com/dvlkv).
+This repository is currently maintained by [Duck 🦆](https://docs.duckcoin.org/)
+
+This library was initially developed by the [Whales Corp.](https://tonwhales.com/) and maintained by [Dan Volkov](https://github.com/dvlkv).
 
 ## License
 
