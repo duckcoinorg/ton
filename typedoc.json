@@ -1,0 +1,16 @@
+{
+  "entryPoints": ["./src/index.ts"],
+  "out": "docs",
+  "name": "TON SDK Documentation",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeInternal": true,
+  "readme": "README.md",
+  "skipErrorChecking": true,
+  "tsconfig": "./tsconfig.json",
+  "validation": {
+    "notExported": false,
+    "invalidLink": false,
+    "notDocumented": false
+  }
+} 

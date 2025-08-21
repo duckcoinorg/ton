@@ -10,3 +10,8 @@
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+
+.env
+
+docs
+.external-ecmascript.js
