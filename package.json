@@ -1,7 +1,7 @@
 {
-  "name": "@ton/ton",
+  "name": "@duckcoin/ton",
   "version": "15.3.1duck0.0.2",
-  "repository": "https://github.com/ton-org/ton.git",
+  "repository": "https://github.com/duckcoinorg/ton.git",
   "author": "Duck 🦆 <developers@duckcoin.org>",
   "license": "MIT",
   "main": "dist/index.js",
