@@ -1,12 +1,18 @@
 {
   "name": "@duckcoin/ton",
-  "version": "15.3.1duck0.0.2",
+  "version": "15.3.1duck0.0.3",
   "repository": "https://github.com/duckcoinorg/ton.git",
   "author": "Duck 🦆 <developers@duckcoin.org>",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "duckcoin",
+    "ton",
+    "duck",
+    "duckcoin-ton"
   ],
   "scripts": {
     "docs": "rm -fr docs && typedoc --options typedoc.json",
